@@ -25,8 +25,8 @@
     "fixed",
     "mobile"
   ],
-  "admin_level": "ADM2",
-  "generated": "2026-09-30T09:47:57",
+  "admin_level": "ADM1",
+  "generated": "2026-09-30T14:31:19",
   "sources": {
     "ookla": {
       "name": "Ookla Speedtest Open Data",
@@ -35,10 +35,10 @@
       "resolution": "Web Mercator z16 (~611 m at the equator)"
     },
     "worldpop": {
-      "name": "WorldPop 2019 1km",
+      "name": "WorldPop 2025 1km",
       "product": "Global 2 R2025A",
       "release": "R2025A",
-      "is_projection": false,
+      "is_projection": true,
       "licence": "CC BY 4.0",
       "url": "https://www.worldpop.org"
     },
@@ -61,15 +61,15 @@
     }
   },
   "headline": {
-    "d_median_pop": 35.08076262286257,
+    "d_median_pop": 35.08,
     "d_median_tile": 34.801,
-    "pct_above_bb": 89.63168880014139,
-    "pct_above_hi": 67.70564748545497,
-    "pop_coverage_pct": 67.42251064470771,
+    "pct_above_bb": 89.59947361854216,
+    "pct_above_hi": 67.64432066937356,
+    "pop_coverage_pct": 67.09386128163521,
     "area_coverage_pct": 0.6349796304729841,
     "lat_median_pop": 30.0
   },
-  "population_total": 106435585.70442306,
-  "connectivity_gini": 0.35771028714359554,
+  "population_total": 117257174.857321,
+  "connectivity_gini": 0.3584067132664719,
   "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
 }

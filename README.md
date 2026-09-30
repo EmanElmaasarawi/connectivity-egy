@@ -16,23 +16,23 @@ the top-right corner. *Le tableau de bord est bilingue : utilisez le sélecteur 
 
 | Indicator · Indicateur | Value · Valeur |
 |---|---|
-| Population (2019, WorldPop) | 106,435,586 |
+| Population (2025, WorldPop) | 117,257,175 |
 | Median mobile download **per person** · Débit médian **par habitant** | **35.1 Mbps** |
 | Median download per measured tile · Débit médian par carreau mesuré | 34.8 Mbps |
 | Population ≥ 10 Mbps · Population ≥ 10 Mbit/s | 89.6% |
-| Population measured · Population mesurée | 67.4% |
+| Population measured · Population mesurée | 67.1% |
 | Land area measured · Territoire mesuré | 0.63% |
 | Connectivity Gini · Gini de connectivité | 0.358 |
 | Median latency · Latence médiane | 30 ms |
-| ADM2 units · Unités ADM2 | 358 |
+| ADM1 units · Unités ADM1 | 27 |
 
 ## Contents · Contenu
 
 | File | Description |
 |---|---|
 | `index.html` | Bilingual interactive dashboard · Tableau de bord interactif bilingue |
-| `connectivity_ADM2_EGY_2026Q2.csv` | Indicators by administrative unit · Indicateurs par unité administrative |
-| `connectivity_ADM2_EGY_2026Q2.geojson` | Same, with geometry · Idem, avec géométrie |
+| `connectivity_ADM1_EGY_2026Q2.csv` | Indicators by administrative unit · Indicateurs par unité administrative |
+| `connectivity_ADM1_EGY_2026Q2.geojson` | Same, with geometry · Idem, avec géométrie |
 | `national_summary_EGY_2026Q2.csv` | National aggregates · Agrégats nationaux |
 | `tiles_EGY_2026Q2.parquet` | Tile-level micro-file · Fichier détail au carreau |
 | `settlement_EGY_2026Q2.csv` | Urban / peri-urban / rural · Urbain / périurbain / rural |
@@ -44,7 +44,7 @@ the top-right corner. *Le tableau de bord est bilingue : utilisez le sélecteur 
 **EN.** Ookla publishes quarterly performance tiles at Web-Mercator zoom 16 (≈611 m at the equator).
 Tiles covering Egypt were extracted directly from the global parquet files using a quadkey
 range predicate, clipped to the national polygon on the tile centroid, and converted from kbps to
-Mbps. Each tile was located in the WorldPop 2019 1km population
+Mbps. Each tile was located in the WorldPop 2025 1km population
 grid (Global 2 R2025A) by its centroid; the population of each grid cell was shared equally among the tiles it
 contains, giving every tile a population weight. All headline speeds are **population-weighted
 medians**. Coverage of measurement is the share of the national population living in a grid cell
@@ -55,7 +55,7 @@ that contains at least one measured tile. Settlement classes are a density proxy
 (≈611 m à l'équateur). Les carreaux couvrant Egypt ont été extraits directement des
 fichiers parquet mondiaux au moyen d'un prédicat d'intervalle sur le quadkey, découpés sur le
 polygone national selon le centroïde du carreau, puis convertis de kbit/s en Mbit/s. Chaque carreau
-a été localisé dans la grille de population WorldPop 2019 1km
+a été localisé dans la grille de population WorldPop 2025 1km
 (Global 2 R2025A) ; la population de chaque cellule a été répartie à parts égales entre
 les carreaux qu'elle contient, ce qui donne à chaque carreau un poids de population. Tous les débits
 mis en avant sont des **médianes pondérées par la population**. La couverture de la mesure est la
@@ -90,7 +90,7 @@ d'enquête.
 ## Sources and licences · Sources et licences
 
 - **Ookla® Speedtest Open Data** — <https://github.com/teamookla/ookla-open-data> — **CC BY-NC-SA 4.0**
-- **WorldPop** 2019 (1km, Global 2 R2025A) — <https://www.worldpop.org> — CC BY 4.0
+- **WorldPop** 2025 (1km, Global 2 R2025A) — <https://www.worldpop.org> — CC BY 4.0
 - **geoBoundaries** (gbOpen) — <https://www.geoboundaries.org> — CC BY 4.0
 
 ## Licence of this product · Licence de ce produit
