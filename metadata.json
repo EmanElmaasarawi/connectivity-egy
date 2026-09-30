@@ -1,0 +1,75 @@
+{
+  "title": {
+    "en": "Egypt — Connectivity and Population",
+    "fr": "Egypt — Connectivité et population"
+  },
+  "iso3": "EGY",
+  "country": "Egypt",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "reference_period": "2026Q2",
+  "quarters_processed": [
+    "2026Q2",
+    "2026Q1",
+    "2025Q4",
+    "2025Q3",
+    "2025Q2",
+    "2025Q1",
+    "2024Q4",
+    "2024Q3",
+    "2024Q2"
+  ],
+  "services": [
+    "fixed",
+    "mobile"
+  ],
+  "admin_level": "ADM2",
+  "generated": "2026-09-30T09:47:57",
+  "sources": {
+    "ookla": {
+      "name": "Ookla Speedtest Open Data",
+      "licence": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/teamookla/ookla-open-data",
+      "resolution": "Web Mercator z16 (~611 m at the equator)"
+    },
+    "worldpop": {
+      "name": "WorldPop 2019 1km",
+      "product": "Global 2 R2025A",
+      "release": "R2025A",
+      "is_projection": false,
+      "licence": "CC BY 4.0",
+      "url": "https://www.worldpop.org"
+    },
+    "geoboundaries": {
+      "name": "geoBoundaries gbOpen",
+      "licence": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  },
+  "methods": {
+    "weighting": "population-weighted median; cell population shared equally among the tiles whose centroid falls in the cell",
+    "coverage": "share of population in 1 km cells containing >= 1 measured tile",
+    "thresholds_mbps": {
+      "broadband": 10,
+      "high_quality": 25
+    },
+    "settlement_density_thresholds": {
+      "urban": 1500,
+      "periurban": 300
+    }
+  },
+  "headline": {
+    "d_median_pop": 35.08076262286257,
+    "d_median_tile": 34.801,
+    "pct_above_bb": 89.63168880014139,
+    "pct_above_hi": 67.70564748545497,
+    "pop_coverage_pct": 67.42251064470771,
+    "area_coverage_pct": 0.6349796304729841,
+    "lat_median_pop": 30.0
+  },
+  "population_total": 106435585.70442306,
+  "connectivity_gini": 0.35771028714359554,
+  "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
+}
